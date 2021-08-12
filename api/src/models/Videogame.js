@@ -16,24 +16,21 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     date: {
-      type: DataTypes.STRING,
-      allowNull: true,
+      type: DataTypes.DATEONLY,
     },
     rating: {
-      type: DataTypes.STRING,
-      allowNull: true,
+      type: DataTypes.INTEGER,
     },
     plataform: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
       allowNull: false,
     },
     image: {
-      type: DataTypes.STRING,
-      allowNull: true,
+      type: DataTypes.TEXT,
     },
     createInDb: {
       type: DataTypes.BOOLEAN,
