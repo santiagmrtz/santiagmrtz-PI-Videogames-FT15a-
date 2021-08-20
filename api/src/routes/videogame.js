@@ -61,7 +61,11 @@ router.post('/', async (req, res) => {
     console.log(req.body)
     const { name, description, image, released, rating, platforms, genres } = req.body;
   
-    let platformString = platforms.join(', ')
+    if (platforms) {
+        var platformString = platforms.join(', ')
+    }
+
+   
   
     let gameCreated = await Videogame.create({
         id: uuidv4(),
