@@ -63,6 +63,7 @@ router.post('/', async (req, res) => {
   
     if (platforms) {
         var platformString = platforms.join(', ')
+        console.log(platformString)
     }
 
    

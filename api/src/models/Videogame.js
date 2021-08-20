@@ -25,7 +25,7 @@ module.exports = (sequelize) => {
     rating: {
       type: DataTypes.INTEGER,
     },
-    plataform: {
+    platforms: {
       type: DataTypes.JSON,
       allowNull: false,
     },
